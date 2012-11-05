@@ -1,0 +1,19 @@
+h1. About
+
+Ubuntu 12.10 AMD 64 template for Vagrant (well, actually for Veewee which builds it).
+
+h1. Installation
+
+<pre>
+git clone git://github.com/jedi4ever/veewee.git
+cd veewee
+git submodule add git://github.com/botanicus/veewee-ubuntu-box.git definitions/ubuntu-12.10-amd64 --init
+veewee vbox build ubuntu-12.10-amd64
+
+vagrant basebox export ubuntu-12.10-amd64
+vagrant box add ubuntu-12.10-amd64 ubuntu-12.10-amd64.box
+</pre>
+
+h1. Links
+
+* "Veewee/Vagrant documentation":https://github.com/jedi4ever/veewee/blob/master/doc/vagrant.md
